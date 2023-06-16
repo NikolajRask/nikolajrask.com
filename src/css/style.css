@@ -14,3 +14,27 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0px;
+  height: 4000px;
+}
+
+.navbar {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  background: rgba(0,0,0,0.2);
+}
+
+.navbar-child-wrapper {
+  display: flex;
+  position: absolute;
+  right: 0px;
+}
+
+.navbar-child {
+  right: 0px;
+  margin-right: 100px;
+  margin-top: 15px;
+  font-size: 17px;
+}
