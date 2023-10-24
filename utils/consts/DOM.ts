@@ -1,0 +1,1 @@
+export const Body = document.body || null;
