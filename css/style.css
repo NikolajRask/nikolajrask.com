@@ -150,3 +150,31 @@ body {
   font-size: 100px;
   user-select: none;
 }
+
+.blob {
+  width: 800px;
+  aspect-ratio: 1.5;
+  background: white;
+  position: absolute;
+  top: 230px;
+  left: 400px;
+  border-radius: 50%;
+  animation: rotate 20s infinite;
+  background: linear-gradient(90deg, rgba(121,9,115,1) 0%, rgba(0,212,255,1) 100%);
+  filter: blur(120px);
+  opacity: 0.4;
+}
+
+@keyframes rotate {
+  0% { 
+    transform: rotate(0deg);
+    filter: blur(120px);
+  }
+  50% {
+    filter: blur(180px);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: blur(120px);
+  }
+}
