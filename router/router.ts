@@ -1,28 +1,19 @@
 import Routes from './routes'
 
 const iframe : any = document.getElementById("page-iframe") 
+const js : any = document.getElementById('js');
 
 var routeLoaded = new CustomEvent('routeLoaded', {
     detail: { message: 'Route Loaded' }
   });
 
 window.addEventListener('load', () => {
-    console.log(getRoute().target == "")
     if (getRoute().target === "") {
-        iframe.setAttribute('src',Routes["index"])
-        return  
+        iframe.setAttribute('src',Routes["index"].html)  
+        return
     }
-    iframe.setAttribute('src',Routes[getRoute().target])
-    /*fetch(Routes[getRoute().target]).then(function (response) {
-        if (response.ok) {
-            return response.text();
-        }
-        throw response;
-    }).then(function (text) {
-        
-        document.dispatchEvent(routeLoaded);
-    });*/
-
+    console.log(Routes[getRoute().target].html)
+    iframe.setAttribute('src', Routes[getRoute().target].html)  
 })
 
 class Route {
@@ -42,3 +33,8 @@ export function getRoute() {
     const route = new Route(window.location )
     return route 
 }
+
+window.addEventListener('message', function(event : any) {
+    // Handle the message received from the iframe
+    window.location.href = event.data.url
+});

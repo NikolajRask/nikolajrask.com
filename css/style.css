@@ -13,6 +13,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --glitch-red: rgb(255, 0, 212);
+  --glitch-green: rgb(209, 236, 51);
+  --glitch-blue: rgb(0, 255, 255);
 }
 
 body {
@@ -163,6 +167,8 @@ body {
   background: linear-gradient(90deg, rgba(121,9,115,1) 0%, rgba(0,212,255,1) 100%);
   filter: blur(120px);
   opacity: 0.4;
+  z-index: 9;
+  pointer-events: none;
 }
 
 @keyframes rotate {
@@ -177,4 +183,143 @@ body {
     transform: rotate(360deg);
     filter: blur(120px);
   }
+}
+
+.socials {
+  width: 50px;
+  height: auto;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 4px;
+
+}
+
+.socials > svg {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 30px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.faded {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.span-glitch {
+  color: white;
+  z-index: 50;
+  position: static;
+}
+
+.span-glitch:hover {
+    animation: glitch 1s steps(100) infinite;
+} 
+
+@keyframes glitch {
+0%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+1%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+2%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+3%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+4%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+5%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+6%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+7%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+8%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+9%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+10%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+11%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+12%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+13%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+14%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+15%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+16%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+17%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+18%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+19%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+20%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+21%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+22%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+23%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+24%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+25%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+26%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+27%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+28%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+29%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+30%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+31%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+32%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+33%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+34%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+35%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+36%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+37%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+38%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+39%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+40%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+41%{text-shadow:50px 0 0 var(--glitch-blue),-50px 0 0 var(--glitch-green);}
+42%{text-shadow:0 0 0 var(--glitch-blue),0 0 0 var(--glitch-green);}
+43%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+44%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+45%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+46%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+47%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+48%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+49%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+50%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+51%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+52%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+53%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+54%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+55%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+56%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+57%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+58%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+59%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+60%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+61%{text-shadow:30px 0 0 var(--glitch-red),-30px 0 0 var(--glitch-green);}
+62%{text-shadow:0 0 0 var(--glitch-red),0 0 0 var(--glitch-green);}
+63%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-blue);}
+64%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-blue);}
+65%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-blue);}
+66%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-blue);}
+67%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+68%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+69%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+70%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+71%{text-shadow:70px 0 0 var(--glitch-red),-70px 0 0 var(--glitch-blue);}
+72%{text-shadow:0 0 0 var(--glitch-red),0 0 0 var(--glitch-blue);}
+73%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+74%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+75%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+76%{text-shadow:1px 0 0 var(--glitch-red),-1px 0 0 var(--glitch-blue);}
+77%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+78%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+79%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+80%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-blue);}
+81%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+82%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+83%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+84%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+85%{text-shadow:0.5px 0 0 var(--glitch-red),-0.5px 0 0 var(--glitch-green);}
+86%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+87%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+88%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+89%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+90%{text-shadow:-1px 0 0 var(--glitch-red),1px 0 0 var(--glitch-green);}
+91%{text-shadow:60px 0 0 var(--glitch-green),-60px 0 0 var(--glitch-blue);}
+92%{text-shadow:0 0 0 var(--glitch-green),0 0 0 var(--glitch-blue);}
+92%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+93%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+94%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+95%{text-shadow:0.7px 0 0 var(--glitch-blue),-0.7px 0 0 var(--glitch-green);}
+96%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+97%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+98%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+99%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
+100%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
 }

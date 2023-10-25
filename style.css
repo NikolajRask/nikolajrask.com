@@ -2,4 +2,11 @@ body {
     margin: 0px;
     overflow-y: hidden;
     overflow-x: hidden;
+    background: black;
+}
+
+#page-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
