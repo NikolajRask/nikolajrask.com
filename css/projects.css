@@ -19,7 +19,7 @@
     border-radius: 5px;
     background-image: url('https://www.ibm.com/blog/wp-content/uploads/2023/03/What-is-Generative-AI-what-are-Foundation-Models-and-why-do-they-matter-scaled.jpg');
     background-size: cover;
-    transition: margin-top 0.3s ease, transform 0.6s ease, filter 0.3s;
+    transition: margin-top 0.3s ease, transform 0.6s ease, filter 0.6s ease; 
     filter: blur(0); /* No blur by default */
 }
 

@@ -21,7 +21,6 @@
 
 body {
   margin: 0px;
-  height: 4000px;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -104,22 +103,24 @@ body {
   font-size: 40px;
   user-select: none;
   font-family: 'Sometype Mono', monospace;
+  margin-bottom: 400px;
 }
 
 
 .pageColor {
   width: 100vw;
-  height: 1080px;
+  min-height: 600px;
   background: rgb(0, 0, 0);
   margin-top: 300px;
   filter: blur(-1px);
-  /*display: none !important;*/
+  display: none !important;
 }
 
 .pageColor-2 {
   width: 100vw;
-  height: 1080px;;
+  min-height: 600px;;
   background: rgb(0, 0, 0);
+  margin-top: 300px;
 }
 
 .render {
