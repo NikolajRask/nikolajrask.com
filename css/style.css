@@ -113,7 +113,7 @@ body {
   background: rgb(0, 0, 0);
   margin-top: 300px;
   filter: blur(-1px);
-  display: none !important;
+  /*display: none !important;*/
 }
 
 .pageColor-2 {
@@ -177,7 +177,7 @@ body {
   background: linear-gradient(90deg, rgba(121,9,115,1) 0%, rgba(0,212,255,1) 100%);
   filter: blur(120px);
   opacity: 0.4;
-  z-index: 9;
+  z-index: 0;
   pointer-events: none;
 }
 

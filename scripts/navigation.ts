@@ -15,7 +15,7 @@ let navigationSwitch : boolean = false;
 
 function toggleNavigation() : void {
     if (!navigationSwitch) { 
-        navigation.style.left = "0px"
+        navigation.style.left = "0vw"
         navigationToggleBtn.style.color = "black"
         navigationSwitch = !navigationSwitch
         return

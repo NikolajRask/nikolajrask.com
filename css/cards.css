@@ -53,7 +53,7 @@
   .card::before {
     background: radial-gradient(
       800px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.06), rgba(121,9,115,0.03), rgba(0,212,255,0.03),
       transparent 40%
     );
     z-index: 3;
@@ -99,7 +99,6 @@
   
   .card-content > img {
     width: 75%;
-    aspect-ratio: 1;
     margin-top: 5%;
     border-radius: 5px;
     transition: width 0.7s ease;
