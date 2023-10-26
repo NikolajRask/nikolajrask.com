@@ -64,11 +64,24 @@
     cursor: pointer;
 }
 
-.message-button-2 {
-    pointer-events: none; 
-
+.message-button > p {
+    font-family: inherit;
+    color: black;
+    z-index: 10;
 }
 
 .message-button-bg {
-    
+    width: 0%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: width 0.7s linear;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.message-button:hover > .message-button-bg {
+    width: 100%;
 }
