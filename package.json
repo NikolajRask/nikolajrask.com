@@ -13,6 +13,8 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "lite-server": "^2.6.1"
+    "emailjs": "^4.0.3",
+    "lite-server": "^2.6.1",
+    "three": "^0.158.0"
   }
 }

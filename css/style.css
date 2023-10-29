@@ -174,7 +174,7 @@ body {
   top: 230px;
   left: 400px;
   border-radius: 50%;
-  animation: rotate 20s infinite;
+  animation: rotate 20s infinite linear;
   background: linear-gradient(90deg, rgba(121,9,115,1) 0%, rgba(0,212,255,1) 100%);
   filter: blur(120px);
   opacity: 0.4;
@@ -348,7 +348,7 @@ body {
   right: 20px;
   height: 60px;
   width: 50px;
-  margin-top: 700px;
+  margin-top: 400px;
   margin-bottom: 20px;
 }
 

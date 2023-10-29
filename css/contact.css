@@ -36,6 +36,7 @@
     border: 1px solid gray;
     background: rgba(0,0,0,0.1);
     margin-top: 10px;
+    border-radius: 6px;
 }
 
 .message-message {
@@ -47,41 +48,36 @@
     background: rgba(0,0,0,0.1);
     margin-top: 10px;
     height: 100px;
+    border-radius: 6px;
+    resize: none;
 }
 
 .message-button {
     position: absolute;
-    padding: 10px 200px 10px 200px;
+    padding: 20px 150px 20px 150px;
     border: none;
     outline: none;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid gray;
     font-family: 'Sometype Mono', monospace;
     margin-top: 20px;
     transform: translateX(-50%);
     left: 50%;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
+    border-radius: 6px;
 }
 
-.message-button > p {
-    font-family: inherit;
+.message-button:hover {
+    background-color: white;
+    border: 2px solid white;
     color: black;
-    z-index: 10;
 }
 
-.message-button-bg {
-    width: 0%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transition: width 0.7s linear;
-    overflow: hidden;
-    z-index: 0;
-}
 
-.message-button:hover > .message-button-bg {
-    width: 100%;
+.message-button:active {
+    background-color: rgb(224, 224, 224);
+    border: 2px solid rgb(224, 224, 224);
+    color: black;
 }
