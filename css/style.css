@@ -340,3 +340,29 @@ body {
 99%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
 100%{text-shadow:-1px 0 0 var(--glitch-blue),1px 0 0 var(--glitch-green);}
 }
+
+
+
+.shoutout-box {
+  position: absolute;
+  right: 20px;
+  height: 60px;
+  width: 50px;
+  margin-top: 700px;
+  margin-bottom: 20px;
+}
+
+.shoutout-box > svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.9s ease;
+  opacity: 0.3;
+}
+
+.shoutout-box > svg:hover {
+  opacity: 1;
+}
