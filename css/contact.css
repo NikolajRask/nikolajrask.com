@@ -1,16 +1,14 @@
 .message-container {
-    width: 1000px;
+    width: 60vw;
     display: flex;
     position: absolute;
-    margin-left: -500px;
-    left: 50%;
+    left: 20vw;
 }
 
 .message-container-2 {
-    width: 1000px;
+    width: 60vw;
     position: absolute;
-    margin-left: -500px;
-    left: 50%;
+    left: 20vw;
     margin-top: 100px;
 }
 
@@ -54,14 +52,14 @@
 
 .message-button {
     position: absolute;
-    padding: 20px 150px 20px 150px;
+    padding: 20px 14vw 20px 14vw;
     border: none;
     outline: none;
     background: transparent;
     border: 2px solid gray;
     font-family: 'Sometype Mono', monospace;
     margin-top: 20px;
-    transform: translateX(-50%);
+    transform: translateX(calc(-50%));
     left: 50%;
     font-size: 16px;
     cursor: pointer;

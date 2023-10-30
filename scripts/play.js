@@ -3,14 +3,16 @@ const name2 = document.querySelector('.name-2')
 const name3 = document.querySelector('.name-3') 
 const name4 = document.querySelector('.name-4') 
 
-const offsetY = 358
-const offsetX = 651
+let offsetY = 358
+let offsetX = 651
 
 const divideConstant = 1000;
 
 const oneSideEnabled = false;
 
 let enabled = true;
+
+
 
 document.addEventListener('mousemove', (e) => {
     if (enabled) {
