@@ -81,7 +81,18 @@
 
 
 
-
+@media (max-width: 1200px) {
+  .journey-container {
+    width: 700px;
+    display: flex;
+    flex-shrink: 2;
+    margin-left: -350px;
+    position: absolute;
+    left: 50%;
+    gap: 50px;
+    height: 242px;
+}
+}
 
 
 
