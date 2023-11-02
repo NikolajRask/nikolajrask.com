@@ -6,14 +6,13 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
+  background-color: #000000;
   --glitch-red: rgb(255, 0, 212);
   --glitch-green: rgb(209, 236, 51);
   --glitch-blue: rgb(0, 255, 255);
@@ -25,6 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .names {
@@ -178,7 +178,7 @@ body {
   margin-top: 150px;
   font-size: 7vw;
   user-select: none;
-  width: 100vw;
+  width: 100%;
 }
 
 .hidden {
