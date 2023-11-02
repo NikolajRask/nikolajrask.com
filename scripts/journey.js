@@ -2,7 +2,7 @@ const journeyText = document.getElementById('journeyText')
 
 const journeyTabs = {
     "1": {
-        text: "Hello World 1",
+        text: "I started my coding life when I was 12 years old and a friend showed me HTML and CSS. After that I got hooked and started making many different websites using only HTML and CSS.",
         btn: document.getElementById('journeyTab1')
     },
     "2": {

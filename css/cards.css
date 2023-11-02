@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;  
-    width: 916px;
+    width: 1300px;
     margin-left: 50%;
     transform: translateX(-458px);
   }
@@ -82,89 +82,11 @@
   
 
 
-  @media only screen and (max-width: 1240px) {
-    .card {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      cursor: pointer;
-      display: flex;
-      height: 216px;
-      flex-direction: column;
-      position: relative;
-      width: 250px;  
-    }
-    #cards {
-      max-width: 766px;
-    }
-  }
-
-  @media only screen and (min-width: 1240px) { 
-
-    .card {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      cursor: pointer;
-      display: flex;
-      height: 260px;
-      flex-direction: column;
-      position: relative;
-      width: 300px;  
-    }
-
-    #cards {
-      max-width: 960px;
-    }
-
-  }
   
-  
-  @media only screen and (max-width: 1020px) {
-    .card {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      cursor: pointer;
-      display: flex;
-      height: 216px;
-      flex-direction: column;
-      position: relative;
-      width: 250px;  
-    }
-    #cards {
-      max-width: 508px;
-    }
-  }
+   
+     
 
-  @media only screen and (max-width: 740px) {
-    .card {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      cursor: pointer;
-      display: flex;
-      height: 164px;
-      flex-direction: column;
-      position: relative;
-      width: 190px;  
-    }
-    #cards {
-      max-width: 388px;
-    }
-  }
 
-  @media only screen and (max-width: 440px) {
-    .card {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      cursor: pointer;
-      display: flex;
-      height: 121px;
-      flex-direction: column;
-      position: relative;
-      width: 140px;  
-    }
-    #cards {
-      max-width: 289px;
-    }
-  }
   
   .card-content > img {
     width: 75%;
