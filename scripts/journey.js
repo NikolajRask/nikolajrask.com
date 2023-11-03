@@ -6,7 +6,7 @@ const journeyTabs = {
         btn: document.getElementById('journeyTab1')
     },
     "2": {
-        text: "Hello World 2",
+        text: "After that I got into JavaScript and started making mini apps on websites.",
         btn: document.getElementById('journeyTab2')
     },
     "3": {
