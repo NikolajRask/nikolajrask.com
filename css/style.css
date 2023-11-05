@@ -397,3 +397,9 @@ body {
       max-width: 620px;
   }
 }
+
+.copyright {
+  position: absolute;
+  right: 20px;
+  padding-bottom: 20px;
+}
