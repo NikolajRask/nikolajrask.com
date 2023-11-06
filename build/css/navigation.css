@@ -1,0 +1,97 @@
+.navigation {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    top: 0px;
+    z-index: 100;
+    left: 100vw;
+    transition: left 1s ease;
+    display: none;
+}
+
+.navigation-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 101;
+    transition: color 1s ease, opacity 0.9s ease;
+    position: fixed;
+    opacity: 0.7;
+    display: none;
+}
+
+.navigation-button:hover {
+    opacity: 1;
+}
+
+.navigation-row {
+    width: 100vw;
+    height: calc((100% - 70px) / 4);
+    background: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.navigation-row:first-of-type {
+    margin-top: 70px;
+}
+
+.navigation-row::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 102;
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 1s ease; /* Transition the opacity */
+}
+
+.navigation-row:nth-of-type(1):after { 
+    background: linear-gradient(90deg, rgba(121, 9, 115, 1) 0%, rgba(0, 0, 0, 1) 19%);
+}
+
+.navigation-row:nth-of-type(2):after { 
+    background: linear-gradient(90deg, rgba(121, 9, 115, 1) 0%, rgba(0, 0, 0, 1) 19%);
+}
+
+.navigation-row:nth-of-type(3):after { 
+    background: linear-gradient(90deg, rgba(121, 9, 115, 1) 0%, rgba(0, 0, 0, 1) 19%);
+}
+
+.navigation-row:nth-of-type(4):after { 
+    background: linear-gradient(90deg, rgba(121, 9, 115, 1) 0%, rgba(0, 0, 0, 1) 19%);
+}
+
+.navigation-row:hover::after {
+    opacity: 1; /* Change opacity on hover */
+}
+
+.navigation-row:hover > .navigation-title {
+    color: white;
+}
+
+.navigation-title {
+    font-family: 'Sometype Mono', monospace;
+    margin-left: 200px;
+    font-size: 60px;
+    color: black;
+    transition: color 0.6s ease;
+    position: absolute;
+    z-index: 103;
+}
+
+.pageSwitcher {
+    z-index: 105;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    top: -100vh;
+    left: 0px;
+    transition: top 0.8s ease;
+    display: none;
+}

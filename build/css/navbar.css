@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Marck+Script&display=swap');
+.navbar {
+    width: 90%;
+    margin-left: 5%;
+    height: 70px;
+    border-bottom: 5px solid white;
+}
+
+.logo {
+    font-family: 'Marck Script', cursive;
+}
