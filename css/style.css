@@ -198,12 +198,15 @@ body {
   top: 230px;
   left: 400px;
   border-radius: 50%;
-  animation: rotate 20s infinite linear;
+  animation: rotate 20s infinite;
   background: linear-gradient(90deg, rgba(121,9,115,1) 0%, rgba(0,212,255,1) 100%);
   filter: blur(120px);
   opacity: 0.4;
   z-index: 0;
   pointer-events: none;
+}
+
+.blob:nth-of-type(3) {
   display: none;
 }
 
