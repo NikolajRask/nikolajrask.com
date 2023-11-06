@@ -1,90 +1,3 @@
-:root {
-    --card-color: rgb(8, 8, 8);
-  }
-  
-  #cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;  
-    width: 1300px;
-    margin-left: 50%;
-    transform: translateX(-458px);
-  }
-  
-  #card-container {
-    display: flex;
-    align-items: center;
-  }
-
-  #cards:hover > .card::after {
-    opacity: 1;
-  }
-
-  
-  .card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    height: 260px;
-    flex-direction: column;
-    position: relative;
-    width: 300px;  
-  }
-  
-  .card:hover::before {
-    opacity: 1;
-  }
-  
-  .card::before,
-  .card::after {
-    border-radius: inherit;
-    content: "";
-    height: 100%;
-    left: 0px;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    transition: opacity 500ms;
-    width: 100%;
-  }
-  
-  .card::before {
-    background: radial-gradient(
-      800px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.06), rgba(121,9,115,0.03), rgba(0,212,255,0.03),
-      transparent 40%
-    );
-    z-index: 3;
-  }
-  
-  .card::after {  
-    background: radial-gradient(
-      600px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.4),
-      transparent 40%
-    );
-    z-index: 1;
-  }
-  
-  .c-item > .card-content {
-
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    inset: 1px;
-    padding: 10px;
-    z-index: 2;
-    align-items: center;
-  }
-  
-
-
-  
-   
-     
-
-
   
   .card-content > img {
     width: 75%;
@@ -93,22 +6,14 @@
     transition: width 0.7s ease;
   }
 
-  .c-item:hover > .card-content > img {
-    width: 55%;
-  }
-
-  .c-item:hover > .card-content > .card-title {
-    opacity: 1;
-    font-size: 1vw;
-    margin-top: 16px;
-  }
-
   .card-title {
     opacity: 0;
     transition: opacity 0.7s ease, font-size 0.7s ease, margin-top 0.7s ease;
     margin-top: 0px;
     font-size: 1vw;
     font-family: 'Sometype Mono', monospace;
+    position: absolute;
+    margin-top: 100px;
   }
 
 
@@ -132,10 +37,12 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     max-height: 100%;
+    transition: background-color 0.6s ease;
 }
 
 .c-item:hover {
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.121);
 }
 
 @media (max-width: 768px) {
@@ -143,15 +50,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .c-item:hover > .card-content > img {
-      width: 55%;
-    }
-  
-    .c-item:hover > .card-content > .card-title {
-      opacity: 1;
-      font-size: 16px;
-      margin-top: 0px;
-    }
 
     .c-container {
       max-width: calc(100vw - 200px);

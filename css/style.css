@@ -18,6 +18,11 @@
   --glitch-blue: rgb(0, 255, 255);
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   margin: 0px;
   font-smooth: always;
@@ -206,7 +211,7 @@ body {
   pointer-events: none;
 }
 
-.blob:nth-of-type(3) {
+.blob:last-of-type {
   display: none;
 }
 
